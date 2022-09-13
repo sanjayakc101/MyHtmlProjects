@@ -1,0 +1,494 @@
+/*
+Sanjaya Kc
+Ali Karahroudy
+COMSC-031-9545
+Activity 5: Course Project
+28 Nov 2021
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul, article, section, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+  background: linear-gradient(#EBD0A4, #5C4033);
+  background-repeat: no-repeat;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide the tablet-desk class */
+.tablet-desk, #nav-links {
+    display: none;
+}
+
+/* Style rules for header content */
+header h1 {
+    text-align: center;
+    color: #8B0000;
+    font-family: 'Lobster';
+    padding: 2%;
+    font-size: 3em;
+}
+
+header h2 {
+  text-align: right;
+  font-family: 'Lobster', cursive;
+  color: #013220;
+  font-size: 2em;
+}
+/* Style rules for navigation area */
+nav {
+    background: radial-gradient(#8B0000, #013220);
+}
+
+.mobile-nav a {
+    color: #FF8C00;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    font-family: 'Lobster';
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    color: #170459;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #EBD0A4;
+    font-family: 'Lobster';
+    text-align: center;
+}
+
+main p {
+    font-size: 1.25em;
+    color: #013220;
+}
+
+#welcome img:first-child {
+    border: solid 1px #003e80;
+}
+
+main a {
+    color: #003e80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+    margin-left: 12%;
+}
+
+figure {
+    text-align: center;
+}
+
+.glowtext {
+    font-size: 3em;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing {
+  from {
+    text-shadow: 0 0 10px #8B0000, 0 0 20px #8B0000, 0 0 30px #8B0000, 0 0 40px #8B0000, 0 0 50px #8B0000, 0 0 60px #8B0000, 0 0 70px #8B0000;
+  }
+  to {
+    text-shadow: 0 0 20px #013220, 0 0 30px #013220, 0 0 40px #013220, 0 0 50px #013220, 0 0 60px #013220, 0 0 70px #013220, 0 0 80px #013220;
+  }
+}
+
+.menu img {
+    box-shadow: 4px 4px 10px #003e80;
+}
+
+.specials {
+    border-right: 4px solid #8B0000;
+    padding: 2%;
+}
+
+.specials:last-child {
+    border-right: none;
+}
+
+.action {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #8B0000;
+}
+
+.tel-link {
+    background-color: #8B0000;
+    padding: 2%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tel-link a {
+    color: #e7eaf3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.round {
+    border-radius: 12px;
+}
+
+#menu ul li {
+    padding-bottom: 4%;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea  {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 1%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #8B0000;
+    font-size: 1em;
+    color: #808080;
+    border-radius: 10px;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #013220;
+    padding: 1% 0;
+    font-family: 'Lobster';
+}
+
+footer a {
+    color: #8B0000;
+    text-decoration: none;
+}
+
+.social img {
+    width: 36px;
+    display: inline-block;
+    padding: 1%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+    /* Tablet Viewport: Show tablet-desk class, hide mobile class */
+    .tablet-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        padding: 1%;
+        font-size: 1.5em;
+        display: inline-block;
+        font-family: 'Lobster',cursive;
+        font-weight: bold;
+    }
+
+    nav li a {
+        display: block;
+        color: #FF8C00;
+        text-decoration: none;
+    }
+
+    /* Tablet Viewport: Style rules for main content */
+    .center {
+        margin: 0 auto;
+    }
+
+    #menu ul {
+        margin-left: 4%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+        text-align: center;
+        font-weight: bold;
+    }
+
+     /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #013220;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 2px solid #333333;
+        padding: 2%;
+        color: #800000;
+    }
+
+    th {
+        background-color: #8B0000;
+        color: #808080;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #855e42;
+    }
+
+    /* Tablet Viewport: Style rules for footer area */
+
+
+    .copyright {
+            float: left;
+            width: 65%;
+     }
+
+    .social {
+            float: right;
+            width: 25%;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 950px), print {
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.25em;
+    }
+
+    nav li a:hover {
+        color: #8a3324;
+        background-color: #FF8C00;
+        opacity: 0.5;
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    main {
+        overflow: auto;
+    }
+
+    #prog-info, #prog-meet {
+        width: 45%;
+        float: left;
+        padding: 2%;
+    }
+
+    /* Desktop Viewport: Style rules for form elements */
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+    /* Desktop Viewport: Style rule for footer content */
+    footer {
+        clear: left;
+    }
+
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1441px) {
+
+    /* Large Desktop Viewport: Style rules for body and wrapper */
+    body {
+        background: linear-gradient(#EBD0A4, #5C4033);
+        background-repeat: no-repeat;
+    }
+
+    #wrapper {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    /* Large Desktop Viewport: Style rule for header content */
+    header h1 {
+        color: #8B0000;
+    }
+
+    /* Large Desktop Viewport: Style rule for main content */
+    main {
+        background-color: #EBD0A4;
+    }
+
+    section {
+        width: auto;
+    }
+
+}
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 720px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #8B0000;
+  font-size: 18px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#content {
+color: #013220;
+}
+
+/* Other pages */
+#otherPages ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#otherPages li {
+  float: right;
+}
+
+#otherPages li a {
+  display: block;
+  font-size: 1.2em;
+  color: #8B0000;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+#otherPages li a:hover {
+  background-color: #2D5A27;
+}
+
+.middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+Sanjaya Kc
+Ali Karahroudy
+COMSC-031-9545
+Activity 5: Course Project
+28 Nov 2021
+ -->
+<html lang="en">
+<head>
+	<title>Reservations | Make a table Reservation</title>
+	<meta charset="utf-8">
+    <meta name="description" content="Create a reservation with us by completing the form.">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+
+    <div id="wrapper">
+
+        <header>
+            <h1>Reservations</h1>
+        </header>
+
+        <!-- Mobile Nav -->
+				<nav class="mobile-nav">
+						<div id="nav-links">
+								<a href="index.html">Home</a>
+								<a href="specials.html">Specials</a>
+								<a href="menu.html">Menu</a>
+								<a href="gallery.html">Gallery</a>
+								<a href="orderonline.html">Order Online</a>
+								<a href="reservations.html">Reservations</a>
+								<a href="contact.html">Contact Us</a>
+						</div>
+						<a class="nav-icon" onclick="menu()">
+								<div id="icon">&#9776;</div>
+						</a>
+		</nav>
+
+				<nav class="tablet-desk">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="specials.html">Specials</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="orderonline.html">Order Online</a></li>
+							<li><a href="reservations.html">Reservations</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+				</nav>
+
+        <!-- Use the main element to add main content to the webpage -->
+        <main id="content">
+
+            <div id="form">
+
+                <h2>Complete the form below to reserve a table at our restaurant.</h2>
+								<img src="images/reserve.jpg" alt="reserve" class="middle">
+								<br>
+								<br>
+
+								<form class="form-grid"><!-- Start Form -->
+
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Number of Guests</legend>
+                        <p>Please select the number of guests:</p>
+
+                        <label for="oneguest"><input type="radio" name="guest" id="oneguest" value="One Guest">1</label>
+
+                        <label for="twoguests"><input type="radio" name="guest" id="twoguests" value="Two Guests">2</label>
+
+                        <label for="threeguests"><input type="radio" name="guest" id="threeguests" value="Three Guests">3</label>
+
+                        <label for="fourguests"><input type="radio" name="guest" id="fourguests" value="Four Guests">4</label>
+
+                        <label for="fiveguests"><input type="radio" name="guest" id="fiveguests" value="Five Guests">5</label>
+
+                        <label for="sixplusguests"><input type="radio" name="guest" id="sixplusguests" value="Six Plus Guests">6+</label>
+                    </fieldset>
+
+                    <fieldset>
+                            <legend>Date and Time</legend>
+                            <label for="questions">Type in your desired date and time for reservation.</label>
+														<label for="questions">Submit the form with the Reserve button.</label>
+														<br>
+                            <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+														<label for="questions">Expect an email confirmation within one business day.</label>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Reserve" class="btn">
+
+                </form>
+
+            </div>
+
+        </main>
+
+				<footer>
+						<div class="copyright">
+								 <p>&copy; Copyright 2021. All Rights Reserved.</p>
+								<p><a href="https://www.grubhub.com/" target="_blank">Everest South Asian Restaurant</a></p>
+						</div>
+						<div class="social">
+								<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook logo" width="25"></a>
+								<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter logo" width="25"></a>
+								<a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram logo" width="25"></a>
+								<a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube logo" width="25"></a>
+								<a href="https://www.whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp logo" width="25"></a>
+								<a href="https://www.pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest logo" width="25"></a>
+						</div>
+				</footer>
+
+    </div>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
